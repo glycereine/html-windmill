@@ -1,0 +1,71 @@
+/*  Header
+...............................*/
+.header {
+    background-color: var(--color-gray);
+    min-height: 56px;
+    height: 56px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    box-shadow: var(--b-sh);
+}
+
+nav.navbar {
+    position: relative;
+}
+
+
+/* Side  Menu
+...............................*/
+ul.navbar-side {
+    position: absolute;
+    background-color: var(--color-dk);
+    overflow: hidden;
+    min-width: 60px; 
+    width: 100%;
+    height: 0;
+    opacity: 0;
+
+}
+input:checked ~ ul.navbar-side {
+    height: calc(100vh - 56px);
+    opacity: 1;
+}
+input.navbar-checkbox:checked ~ ul.navbar-side:hover {
+    min-width: 185px;
+}
+ul.navbar-side li.nav-item {
+    display: flex;
+    align-items: center;
+    min-height: 56px;
+    min-width: 185px;
+}
+li.nav-item:hover {
+    background-color: var(--color-dk-gray);
+}
+ul.navbar-side a.nav-link {
+    position: relative;
+    font-weight: 500;
+    padding: 0px 10px 0px 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: transparent;
+}
+ul.navbar-side:hover a.nav-link {
+    color: var(--color-lg-gray);
+}
+
+ul.navbar-side .ico {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: var(--color-lg-gray);
+}
+ul.navbar-side:hover a.nav-link:hover,
+ul.navbar-side a.nav-link:hover .ico {
+    color: var(--hover);
+}

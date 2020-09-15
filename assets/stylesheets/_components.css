@@ -1,0 +1,70 @@
+/*  Blocks / modules / components
+-----------------------------------------------*/
+
+
+/*  Checkbox for Toggle Side menu
+...............................*/
+input.navbar-checkbox {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/*  Toggle button
+...............................*/
+label.navbar-toggler {
+    display: block;
+}
+
+.navbar-btn {
+    display: block;
+    font-size: 24px;
+    width: 60px;
+    height: 56px;
+    line-height: 56px;
+    background-color: #020202;
+    color: #fff;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.navbar-btn:focus {
+    border: 0;
+    outline: none;
+}
+input:checked ~ label.navbar-toggler a.navbar-btn:before {
+    content: "\e8a0";
+}
+
+
+
+/* Breadcrumbs
+...............................*/
+ul.list-breadcrumbs {
+    font-size: var(--fz-lg);
+    padding: 0 24px;
+}
+ul.list-breadcrumbs li, h3 {
+    display: inline-block;
+}
+
+ul.list-breadcrumbs li:before {
+    font-size: 18px;
+    color: #e9e9e9;
+    display: inline-block;
+    margin: 3px 17px 0;
+
+    font-family: 'icomoon';
+    vertical-align: top;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    content: "\e7c3";
+}

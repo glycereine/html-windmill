@@ -1,0 +1,66 @@
+.form-control, .form-control:focus {
+	color: var(--form-control);
+	font: var(--font-form-control);
+	box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: var(--placeholder);
+	font: var(--font-placeholder);
+}
+.form-control::-moz-placeholder {
+	color: var(--placeholder);
+	font: var(--font-placeholder);
+}
+.form-control::-ms-input-placeholder {
+	color: var(--placeholder);
+	font: var(--font-placeholder);
+}
+
+
+/* Form Search
+-----------------------------------------------*/
+form.form-seach {
+    margin-left: auto;
+    flex: 0 0 33.3333%;
+    width: 100%;
+    padding-right: 15px;
+}
+
+.form-group {
+    position: relative;
+}
+
+label.form-label:after {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    z-index: 1;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-left: 4.5px solid transparent;
+    border-right: 4.5px solid transparent;
+    border-top: 5px solid #fff;
+}
+
+button.btn-submit {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input.form-control {
+	width: 100%;
+    height: 28px;
+    padding: 7px 30px 7px 35px;
+    background-color: #707070;
+    border: 0;
+    border-radius: 5px;
+}
